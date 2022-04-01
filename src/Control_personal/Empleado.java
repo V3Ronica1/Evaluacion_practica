@@ -2,13 +2,13 @@
 package Control_personal;
 
  class Empleado {
-    
+     String empleado;
+
+   
      String nombre,Direccion,area;
      int codigo_empleado,edad;
-     
-   
-     double sueldo_base;
-     double descuentos,ISSS,AFP,ISR;
+     double sueldo_base,sueldo_total,descuento_total,Renta,AFP,ISSS;
+
      
      public Empleado(String nombre,String area,int codigo_empleado, int edad,double sueldo_base)
      {
@@ -21,7 +21,7 @@ package Control_personal;
      }
 
     Empleado() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
      
 
@@ -72,5 +72,20 @@ package Control_personal;
     public void setEdad(int edad) {
         this.edad = edad;
     }
-     
+      public String getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(String empleado) {
+        this.empleado = empleado;
+    }
+    
+    public double getRenta() {
+        return Renta;
+    }
+
+    public void setRenta(double Renta) {
+        this.Renta = Renta;
+    }
+   
 }
